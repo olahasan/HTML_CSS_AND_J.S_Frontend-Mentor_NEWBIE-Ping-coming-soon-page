@@ -1,191 +1,214 @@
 :root {
-    --Blue: hsl(223, 87%, 63%);
-    --Pale-Blue: hsl(223, 100%, 88%);
-    --Light-Red: hsl(354, 100%, 66%);
-    --Gray: hsl(0, 0%, 59%);
-    --Very-Dark-Blue: hsl(209, 33%, 12%);
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Libre Franklin', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Small */
 @media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
+  .container {
+    width: 750px;
+  }
 }
 
 /* Medium */
 @media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
+  .container {
+    width: 970px;
+  }
 }
 
 /* Large */
 @media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
+  .container {
+    width: 1170px;
+  }
 }
 
 .biggest_box {
-    text-align: center;
-    padding: 40px 0;
+  text-align: center;
+  padding: 40px 0;
 }
 
 .biggest_box .container .text_box h2 {
-    font-size: 40px;
-    margin-bottom: 0;
+  font-size: 40px;
+  margin-bottom: 0;
 }
 
 .biggest_box .container .text_box h2 span {
-    font-weight: normal;
-    color: var(--Gray);
+  font-weight: normal;
+  color: var(--Gray);
 }
 
 .biggest_box .container .text_box p {
-    color: hsl(209deg 33% 12% / 77%);
-    font-weight: 600;
-    margin-bottom: 30px;
+  color: hsl(209deg 33% 12% / 77%);
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .biggest_box .container .text_box form {
-    margin-bottom: 70px;
-    position: relative;
+  margin-bottom: 70px;
+  position: relative;
 }
 
-.biggest_box .container .text_box form input[ name="email"] {
-    border: 2px solid hsl(0deg 0% 59% / 39%);
-    padding: 10px 140px 10px 20px;
-    border-radius: 20px;
-    color: hsl(0deg 0% 59% / 39%);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.biggest_box .container .text_box form input[name="email"] {
+  border: 1px solid var(--Pale-Blue);
+  padding: 10px 140px 10px 20px;
+  border-radius: 20px;
+  color: hsl(0deg 0% 59% / 39%);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
-.biggest_box .container .text_box form input[ name="email"]:focus {
-    outline: none;
-    color: var(--Gray);
+.biggest_box .container .text_box form input[name="email"]:focus {
+  outline: none;
+  color: var(--Gray);
+  caret-color: var(--Blue);
+}
+
+.biggest_box .container .text_box form input[name="email"]::placeholder {
+  color: hsl(0deg 0% 59% / 39%);
+  transition: 0.5s;
+}
+.biggest_box .container .text_box form input[name="email"]:focus::placeholder {
+  opacity: 0;
 }
 
 .biggest_box .container .text_box form input[type="submit"] {
-    border: 2px solid var(--Blue);
-    padding: 10px 40px;
-    border-radius: 20px;
-    color: white;
-    background-color: var(--Blue);
-    box-shadow: 0px 5px 5px 1px var(--Pale-Blue);
-    margin-left: 5px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+  border: 2px solid var(--Blue);
+  padding: 10px 40px;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--Blue);
+  box-shadow: 0px 5px 5px 1px var(--Pale-Blue);
+  margin-left: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.biggest_box .container .text_box form input[type="submit"]:hover {
+  background-color: rgb(63 107 221);
+  border: 2px solid rgb(63 107 221);
 }
 
 .biggest_box .container .text_box form .error {
-    position: relative;
-    top: -51px;
-    left: -8px;
-    font-size: 11px;
-    color: var(--Light-Red);
+  position: relative;
+  top: -51px;
+  left: -8px;
+  font-size: 11px;
+  color: var(--Light-Red);
 }
 
 .hide {
-    display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 
 .biggest_box .container .photo_box {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .biggest_box .container .photo_box .image img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .biggest_box .container footer .icons ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    color: var(--Blue);
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: var(--Blue);
+  padding: 0;
 }
 
 .biggest_box .container footer .icons ul li {
-    border: 1px solid var(--Gray);
-    padding: 7px 5px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+  border: 1px solid var(--Gray);
+  padding: 7px 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: scale(1.1);
 }
 
 .biggest_box .container footer .icons ul li:not(:last-child) {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .biggest_box .container footer p {
-    font-size: 12px;
-    color: var(--Gray);
+  font-size: 12px;
+  color: var(--Gray);
 }
 
-@media(max-width:767px) {
-    .biggest_box .container .text_box .logo {
-        margin-top: 60px;
-    }
+@media (max-width: 767px) {
+  .biggest_box .container .text_box .logo {
+    margin-top: 60px;
+  }
 
-    .biggest_box .container .text_box .logo img {
-        margin-bottom: 20px;
-    }
+  .biggest_box .container .text_box .logo img {
+    margin-bottom: 20px;
+  }
 
-    .biggest_box .container .text_box h2 {
-        font-size: 30px;
-    }
+  .biggest_box .container .text_box h2 {
+    font-size: 30px;
+  }
 
-    .biggest_box .container .text_box p {
-        margin-top: 25px;
-    }
+  .biggest_box .container .text_box p {
+    margin-top: 25px;
+  }
 
-    .biggest_box .container .text_box form input[name="email"] {
-        width: 80%;
-        margin-bottom: 20px;
-    }
+  .biggest_box .container .text_box form input[name="email"] {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 
-    .biggest_box .container .text_box form input[type="submit"] {
-        margin-left: 0;
-        width: 80%;
-    }
+  .biggest_box .container .text_box form input[type="submit"] {
+    margin-left: 0;
+    width: 80%;
+  }
 
-    .biggest_box .container .text_box form .error {
-        top: -112px;
-        left: 66px;
-        position: relative;
-    }
+  .biggest_box .container .text_box form .error {
+    top: -112px;
+    left: 66px;
+    position: relative;
+  }
 
-    .biggest_box .container .photo_box {
-        margin-bottom: 130px;
-    }
+  .biggest_box .container .photo_box {
+    margin-bottom: 130px;
+  }
 }

@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <!-- next meta, tells the browser to use the most modern version, standards-compliant rendering mode available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Font Awesome Library -->
-  <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap"
-    rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/main.css" />
-</head>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body>
-
-  <div class="biggest_box">
-    <div class="container">
-
-      <div class="text_box">
-        <div class="logo">
-          <img src="images/logo.svg" alt="pic" />
-        </div>
-        <h2><span>We are launching</span> soon!</h2>
-        <p>Subscribe and get notified</p>
-        <form action="" method="get" target="_blank">
-          <input type="text" placeholder="Your email address..." value="Your email address..." name="email" />
-          <input type="submit" value="Notify Me" />
-
-          <div class="error hide">
-            <small id="small_Email">Please Provide a valid email(has @)</small>
-            <i class="fa-solid fa-triangle-exclamation"></i>
+  <body>
+    <div class="biggest_box">
+      <div class="container">
+        <div class="text_box">
+          <div class="logo">
+            <img loading="lazy" src="images/logo.svg" alt="logo icon" />
           </div>
+          <h2><span>We are launching</span> soon!</h2>
+          <p>Subscribe and get notified</p>
+          <form action="" method="post" target="_blank">
+            <input
+              type="text"
+              placeholder="Your email address..."
+              value=""
+              name="email"
+            />
+            <input type="submit" value="Notify Me" />
 
-        </form>
-      </div>
-      <div class="photo_box">
-        <div class="image">
-          <img src="images/illustration-dashboard.png" alt="pic" />
+            <div class="error hide">
+              <small id="small_Email"
+                >Please Provide a valid email(has @)</small
+              >
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+          </form>
         </div>
-      </div>
-      <footer>
-        <div class="icons">
-          <ul>
-            <li><i class="fa-brands fa-facebook-f"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-square-instagram"></i></li>
-          </ul>
+        <div class="photo_box">
+          <div class="image">
+            <img
+              loading="lazy"
+              src="images/illustration-dashboard.png"
+              alt="illustration-dashboard"
+            />
+          </div>
         </div>
-        <p>&copy; Copyright Ping. All rights reserved.</p>
-      </footer>
-
+        <footer>
+          <div class="icons">
+            <ul>
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-square-instagram"></i></li>
+            </ul>
+          </div>
+          <p>&copy; Copyright Ping. All rights reserved.</p>
+        </footer>
+      </div>
     </div>
-  </div>
 
-  <script src="main.js"></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
